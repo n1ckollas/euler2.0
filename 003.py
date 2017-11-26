@@ -11,16 +11,17 @@ def is_prime(num):
 
 
 def prime_fator(num):
-	factor = num - 1 
+	factor = num - 1
 	while factor > 0:
 		if num % factor == 0:
 			if is_prime(factor):
-				return factor
+				print factor
+				break
 		factor -= 1
-		print(factor)
-
-print(prime_fator(600851475143))
 
 
+prime_fator(600851475143)
 
+
+# 6857
 
