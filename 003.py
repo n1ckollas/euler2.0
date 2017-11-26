@@ -8,16 +8,18 @@ def is_prime(num):
 			x += 1
 		return prime
 
-print(is_prime(47))
+
 
 def prime_fator(num):
 	factor = num - 1 
 	while factor > 0:
-		if is_prime(factor):
-			return factor
+		if num % factor == 0:
+			if is_prime(factor):
+				return factor
 		factor -= 1
+		print(factor)
 
-# print(prime_fator(600851475143))
+print(prime_fator(600851475143))
 
 
 
